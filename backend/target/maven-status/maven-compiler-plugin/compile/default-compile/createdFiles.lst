@@ -1,0 +1,9 @@
+com\puzzle\platform\service\PuzzleService.class
+com\puzzle\platform\config\WebSocketConfig.class
+com\puzzle\platform\PuzzlePlatformApplication.class
+com\puzzle\platform\controller\WebSocketController.class
+com\puzzle\platform\service\PuzzleService$PuzzleSolvedEvent.class
+com\puzzle\platform\controller\PuzzleController.class
+com\puzzle\platform\repository\PuzzleRepository.class
+com\puzzle\platform\dto\PuzzleMove.class
+com\puzzle\platform\model\Puzzle.class

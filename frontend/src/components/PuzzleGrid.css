@@ -1,0 +1,173 @@
+.puzzle-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.puzzle-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ad1457;
+  font-weight: 600;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #ad1457;
+  background-color: white;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.connection-indicator {
+  margin: 15px 0;
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-weight: 500;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.connection-indicator.online {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.connection-indicator.offline {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+.puzzle-active-state {
+  margin: 20px 0;
+}
+
+.game-status {
+  margin: 15px 0;
+  padding: 12px;
+  background-color: #fff3e0;
+  border-radius: 8px;
+  color: #f57c00;
+  font-weight: 500;
+}
+
+.puzzle-solved-state {
+  margin: 20px 0;
+}
+
+.game-board, .solved-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: repeat(4, 70px);
+  gap: 3px;
+  justify-content: center;
+  margin: 20px 0;
+  border: 2px solid #f8bbd9;
+  padding: 15px;
+  background-color: #fce4ec;
+  border-radius: 8px;
+}
+
+.solved-grid {
+  border-color: #81c784;
+  background-color: #e8f5e9;
+}
+
+.game-cell {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #f8bbd9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.game-cell.empty {
+  background-color: white;
+  color: #f8bbd9;
+}
+
+.game-cell.filled {
+  background-color: #81d4fa;
+  color: white;
+}
+
+.game-cell:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.game-cell.solved {
+  cursor: default;
+  border-color: #81c784;
+}
+
+.game-cell.solved:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.game-cell.solved.filled {
+  background-color: #4caf50;
+}
+
+.game-instructions {
+  margin-top: 20px;
+  text-align: left;
+  background-color: #fce4ec;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #f8bbd9;
+}
+
+.game-instructions h3 {
+  margin-top: 0;
+  color: #ad1457;
+  font-size: 18px;
+}
+
+.game-instructions p {
+  color: #555;
+  line-height: 1.5;
+  margin: 8px 0;
+}
+
+.completion-celebration {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #81d4fa;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.reward-points {
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: rgba(255,255,255,0.2);
+  padding: 8px 15px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.progress-hint {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #fff3e0;
+  border-radius: 6px;
+  color: #555;
+  font-size: 14px;
+  border-left: 3px solid #ffb74d;
+}
