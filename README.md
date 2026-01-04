@@ -51,11 +51,6 @@ A real-time collaborative web application where multiple users can create and so
    npm start
    ```
 
-5. **Access Application**
-   - Frontend: http://localhost:3000
-   - Backend API: http://localhost:8080
-   - H2 Console: http://localhost:8080/h2-console
-
 ## Architecture
 
 ### Real-time Synchronization
